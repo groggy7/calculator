@@ -6,9 +6,9 @@ function calculate(firstNumber, secondNumber, operator) {
             return firstNumber + secondNumber
         case '-':
             return firstNumber - secondNumber
-        case '*':
+        case 'x':
             return firstNumber * secondNumber
-        case '/':
+        case '÷':
             return firstNumber / secondNumber
         default:
             break;
@@ -66,10 +66,15 @@ ac.addEventListener("click", () => {
 const equal = document.querySelector(".equal")
 
 equal.addEventListener("click", () => {
-    secondNumber = result.value
+    firstNumber = parseFloat(firstNumber)
+    secondNumber = parseFloat(result.value)
+
+    console.log(`first num: ${firstNumber}, ${typeof firstNumber}`)
+    console.log(`first num: ${secondNumber}, ${typeof secondNumber}`)
+    console.log(`first num: ${operator}, ${typeof operator}`)
+
     operation.value += " " + secondNumber
 
     const output = calculate(firstNumber, secondNumber, operator)
-    console.log(output)
     result.value = output
 })
