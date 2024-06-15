@@ -1,5 +1,9 @@
+* {
+    font-size: 16px;
+}
+
 body {
-    background-color: antiquewhite;
+    background-color: #35374B;
 }
 
 p {
@@ -25,12 +29,35 @@ p {
     height: 200px;
 }
 
+.output-screen {
+    margin-left: auto;
+}
+
+textarea {
+    margin: 10px 20px;
+    height: 20px;
+    display: block;
+}
+
+#operation {
+    width: 100px;
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    color: #F57978;
+    text-align: end;
+    
+}
+
 #result {
     width: 100px;
     align-self: flex-end;
     background-color: transparent;
     border: none;
     resize: none;
+    color: white;
+    text-align: end;
 }
 
 button {
@@ -47,7 +74,6 @@ button {
     box-shadow: 1px 0px 0px 0px rgba(255, 255, 255, 0.2),
                 0px -1px 0px 0px rgba(255, 255, 255, 0.2),
                 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
-    font-size: 16px;
 }
 
 .buttons {
@@ -70,7 +96,7 @@ button {
     color: #8A9CFD;
 }
 
-.operation {
+.operator {
     color: #F57978;
 }
 
