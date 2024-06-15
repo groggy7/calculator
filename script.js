@@ -78,3 +78,23 @@ equal.addEventListener("click", () => {
     const output = calculate(firstNumber, secondNumber, operator)
     result.value = output
 })
+
+const percentage = document.querySelector(".percentage")
+
+percentage.addEventListener("click", () => {
+    if(result.value != 0) {
+        result.value = result.value * 1 / 100
+    }
+})
+
+const del = document.querySelector(".delete")
+
+del.addEventListener("click", () => {
+    if(result.value > 0) {
+        result.value = result.value.slice(0, -1)
+    }
+
+    if(result.value == "") {
+        result.value = 0
+    }
+})
